@@ -39,6 +39,3 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: main
           folder: dist
-          single-commit: true
-          clean: true
-          silent: true
