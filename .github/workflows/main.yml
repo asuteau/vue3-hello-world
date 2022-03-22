@@ -22,18 +22,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
       - name: Install and Build 🔧
         run: |
-          npm ci
+          set -e
+          rm -rf dist
           npm run build
-      - name: Build and Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          git-config-name: asuteau
-          git-config-email: aymeric.suteau.work@gmail.com
-          repository-name: asuteau/asuteau.github.io
-          ssh-key: ${{ secrets.ACCESS_KEY }}
-          branch: main
-          folder: dist
+          cd dist
+          git init
+          git checkout -b main
+          git add -A
+          git commit -m 'deploy'
+          git push -f git@github.com:asuteau/asuteau.github.io.git main
+          cd -
