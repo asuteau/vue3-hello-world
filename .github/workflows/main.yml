@@ -33,9 +33,7 @@ jobs:
       - name: Build and Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          git-config-name: asuteau
-          git-config-email: aymeric.suteau.work@gmail.com
           repository-name: asuteau/asuteau.github.io
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           branch: main
           folder: dist
