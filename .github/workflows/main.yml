@@ -35,7 +35,7 @@ jobs:
         with:
           git-config-name: asuteau
           git-config-email: aymeric.suteau.work@gmail.com
-          repository-name: asuteau.github.io
-          ssh-key: true
+          repository-name: asuteau/asuteau.github.io
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
           branch: main
           folder: dist
