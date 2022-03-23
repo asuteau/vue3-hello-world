@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is about Protofish</h1>
+    <h1>Protofish is aobut fishes</h1>
   </div>
 </template>
 
