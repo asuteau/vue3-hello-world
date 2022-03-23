@@ -31,7 +31,5 @@ jobs:
       - name: Build and Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          repository-name: asuteau/asuteau.github.io
-          ssh-key: ${{ secrets.ACCESS_TOKEN }}
-          branch: main
+          branch: gh-pages
           folder: dist
