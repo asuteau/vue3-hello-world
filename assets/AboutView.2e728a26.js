@@ -1,0 +1,1 @@
+import{_ as e}from"./index.3d223e07.js";import{o,c as t,a as s}from"./vendor.c1f1bd55.js";const _={},a={class:"about"},c=s("h1",null,"Protofish is aobut fishes",-1),r=[c];function n(i,u){return o(),t("div",a,r)}var l=e(_,[["render",n]]);export{l as default};
